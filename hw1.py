@@ -43,7 +43,7 @@ def check_sum_salary(
     Raises:
         TypeError: if not isinstance(departments[ind][0], str).
     """
-    if salary_cap is not None and salary_cap < 0:
+    if salary_cap is not None or salary_cap < 0:
         salary_cap = 0
 
     list_all_salaries: list[float] = []
